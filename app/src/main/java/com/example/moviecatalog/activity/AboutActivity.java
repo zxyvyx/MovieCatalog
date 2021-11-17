@@ -18,7 +18,7 @@ public class AboutActivity extends AppCompatActivity {
     }
 
     public void openRepository(View view) {
-        Intent intentOpenBrowser = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/zxyvyx/MovieDirectory"));
+        Intent intentOpenBrowser = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/zxyvyx/MovieCatalog"));
         startActivity(intentOpenBrowser);
     }
 }
