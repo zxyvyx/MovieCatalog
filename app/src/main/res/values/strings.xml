@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Movie Catalog</string>
+    <string name="menu_about">About</string>
+    <string name="image">Movie Cover</string>
+    <string name="txt_hint_title">Movie Title</string>
+    <string name="txt_hint_desc">Description</string>
+    <string name="rating" translatable="false">Rating</string>
+    <string name="release_date">Release Date</string>
+    <string name="original_title">Original Title</string>
+    <string name="language">Language</string>
+    <string name="popularity">Popularity</string>
+    <string name="author_2997" translatable="false">Hasymi Al Hamdi</string>
+    <string name="nim_2997" translatable="false">19.11.2997</string>
+    <string name="repository" translatable="false">Repository</string>
+</resources>

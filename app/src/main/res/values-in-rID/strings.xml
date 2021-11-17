@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Katalog Movie</string>
+    <string name="menu_about">Tentang</string>
+    <string name="image">Sampul Film</string>
+    <string name="txt_hint_title">Judul Film</string>
+    <string name="txt_hint_desc">Deskripsi</string>
+    <string name="rating">Rating</string>
+    <string name="release_date">Tanggal Rilis</string>
+    <string name="original_title">Judul Asli</string>
+    <string name="language">Bahasa</string>
+    <string name="popularity">Penonton</string>
+</resources>
