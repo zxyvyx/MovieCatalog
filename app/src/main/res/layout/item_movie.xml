@@ -44,10 +44,11 @@
                 android:id="@+id/txt_release_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/release_date"
-                android:textSize="12sp"
                 android:fontFamily="@font/nregular"
-                android:textColor="@color/light_white"/>
+                android:text="@string/release_date"
+                android:textColor="@color/light_white"
+                android:textSize="12sp"
+                tools:ignore="TextContrastCheck" />
         </LinearLayout>
 
         <TextView
@@ -67,9 +68,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:maxLines="2"
-        android:textSize="16sp"
-        android:text="@string/txt_hint_desc"
         android:fontFamily="@font/nregular"
-        android:textColor="@color/light_white"/>
+        android:maxLines="2"
+        android:text="@string/txt_hint_desc"
+        android:textColor="@color/light_white"
+        android:textSize="16sp"
+        tools:ignore="TextContrastCheck" />
 </LinearLayout>

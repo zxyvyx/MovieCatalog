@@ -47,7 +47,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyOwnHolder>
                 result.setVoteCount(resultList.get(holder.getAbsoluteAdapterPosition()).getVoteCount());
                 result.setVoteAverage(resultList.get(holder.getAbsoluteAdapterPosition()).getVoteAverage());
                 result.setOverview(resultList.get(holder.getAbsoluteAdapterPosition()).getOverview());
-                result.setOriginalLanguage(resultList.get(holder.getAbsoluteAdapterPosition()).getOriginalLanguage());
+                result.setOriginalLanguage(resultList.get(holder.getAbsoluteAdapterPosition()).getOriginalLanguage().toUpperCase());
                 result.setPosterPath(resultList.get(holder.getAbsoluteAdapterPosition()).getPosterPath());
                 result.setPopularity(resultList.get(holder.getAbsoluteAdapterPosition()).getPopularity());
                 intent.putExtra(DetailActivity.EXTRA_MOVIE, result);
