@@ -28,8 +28,6 @@ import retrofit2.Callback;
 public class MainActivity extends AppCompatActivity {
 
     private MovieAdapter adapter;
-//    String API_KEY = "618dd6084a56fb3dee0da690";
-//    int PAGE = 1;
     String API_KEY = "a6342954148d3807748b4697f64a5474";
     String CATEGORY = "popular";
     int PAGE = 1;
@@ -69,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void CallRetrofit() {
         APIInterface apiInterface = APIClient.getCient().create(APIInterface.class);
-//        Call<Response> responseCall = apiInterface.getMovie(API_KEY);
         Call<Response> responseCall = apiInterface.getMovie(CATEGORY, API_KEY, PAGE);
         responseCall.enqueue(new Callback<Response>() {
 
