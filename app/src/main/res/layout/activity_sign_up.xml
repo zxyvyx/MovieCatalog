@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activity.SignUpActivity"
+    android:background="@color/purple_500">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/txt_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:fontFamily="@font/nbold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="15dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nbold"
+                android:text="@string/sign_up_description"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:background="@drawable/custom_input"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawablePadding="15dp"
+                android:hint="@string/username"
+                android:fontFamily="@font/nregular"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:autofillHints="Username"
+                android:nextFocusUp="@id/username"
+                android:nextFocusLeft="@id/username"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:background="@drawable/custom_input"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="15dp"
+                android:hint="@string/password"
+                android:fontFamily="@font/nregular"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:autofillHints="Password"
+                android:nextFocusUp="@id/password"
+                android:nextFocusLeft="@id/password"/>
+
+            <EditText
+                android:id="@+id/repassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:background="@drawable/custom_input"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="15dp"
+                android:hint="@string/re_password"
+                android:fontFamily="@font/nregular"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:autofillHints="Re-Password"
+                android:nextFocusUp="@id/repassword"
+                android:nextFocusLeft="@id/repassword"/>
+
+            <Button
+                android:id="@+id/btn_signup_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="128dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/magenta"
+                android:fontFamily="@font/nbold"
+                android:minHeight="48dp"
+                android:text="@string/sign_up"
+                app:cornerRadius="25dp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

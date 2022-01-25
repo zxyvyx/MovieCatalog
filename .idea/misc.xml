@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2942708333333333" />
+        <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/drawable/custom_input.xml" value="0.2545045045045045" />
         <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/drawable/gradient.xml" value="0.2942708333333333" />
         <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.2942708333333333" />
+        <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/drawable/ic_baseline_back_24.xml" value="0.2545045045045045" />
         <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.2942708333333333" />
         <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/drawable/ic_info.xml" value="0.2942708333333333" />
         <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2942708333333333" />
@@ -13,8 +15,12 @@
         <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/drawable/rounded_image.xml" value="0.2942708333333333" />
         <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/layout-v31/item_movie.xml" value="0.20923913043478262" />
         <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/layout/activity_about.xml" value="0.25" />
+        <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/layout/activity_catalog.xml" value="0.2269021739130435" />
         <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/layout/activity_detail.xml" value="0.25" />
         <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/layout/activity_profile.xml" value="0.22282608695652173" />
+        <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/layout/activity_sign_in.xml" value="0.2269021739130435" />
+        <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/layout/item_movie.xml" value="0.25" />
         <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/layout/tes.xml" value="0.5453237410071943" />
         <entry key="..\:/hasy_coolyeah/semester-5/apl-mobile/MovieCatalog/app/src/main/res/menu/about_menu.xml" value="0.278125" />

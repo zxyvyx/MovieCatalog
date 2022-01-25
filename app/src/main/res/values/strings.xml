@@ -12,4 +12,16 @@
     <string name="author_2997" translatable="false">Hasymi Al Hamdi</string>
     <string name="nim_2997" translatable="false">19.11.2997</string>
     <string name="repository" translatable="false">Repository</string>
+    <string name="subtitle">Daily dose of popular movie in your pocket</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="back_to_parent">Back to parent</string>
+    <string name="sign_up_description">Create an account to use the features</string>
+    <string name="sign_in_description">Sign in to use the features</string>
+    <string name="placeholder_greeting_user">Hi, User!</string>
+    <string name="placeholder_user_desc">Hope your enjoy using the app!</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="re_password">Re-Password</string>
 </resources>

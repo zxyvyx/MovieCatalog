@@ -10,4 +10,16 @@
     <string name="original_title">Judul Asli</string>
     <string name="language">Bahasa</string>
     <string name="popularity">Penonton</string>
+    <string name="subtitle">Kebutuhan film populer di dalam genggaman Anda</string>
+    <string name="sign_in">Masuk</string>
+    <string name="sign_up">Daftar</string>
+    <string name="back_to_parent">Kembali ke Awal</string>
+    <string name="sign_up_description">Buat akun untuk menggunakan layanan</string>
+    <string name="sign_in_description">Masuk untuk menggunakan layanan</string>
+    <string name="username">Nama Pengguna</string>
+    <string name="placeholder_greeting_user">Hi, User!</string>
+    <string name="placeholder_user_desc">Semoga Anda menikmati aplikasi ini!</string>
+    <string name="sign_out">Keluar</string>
+    <string name="password">Kata Sandi</string>
+    <string name="re_password">Ulangi Kata Sandi</string>
 </resources>

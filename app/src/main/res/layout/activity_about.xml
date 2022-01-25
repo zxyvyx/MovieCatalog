@@ -42,7 +42,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/logo_moca"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -55,7 +55,7 @@
                 tools:ignore="ImageContrastCheck" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/txt_app_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -63,13 +63,13 @@
                 android:text="@string/author_2997"
                 android:textColor="@color/white"
                 android:textSize="24sp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView"
-                app:layout_constraintStart_toStartOf="@+id/imageView"
-                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="@+id/logo_moca"
+                app:layout_constraintStart_toStartOf="@+id/logo_moca"
+                app:layout_constraintTop_toBottomOf="@+id/logo_moca"
                 tools:ignore="TextContrastCheck" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/txt_subtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -77,9 +77,9 @@
                 android:text="@string/nim_2997"
                 android:textColor="@color/light_white"
                 android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView"
-                app:layout_constraintStart_toStartOf="@+id/imageView"
-                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="@+id/logo_moca"
+                app:layout_constraintStart_toStartOf="@+id/logo_moca"
+                app:layout_constraintTop_toBottomOf="@+id/txt_app_name"
                 tools:ignore="TextContrastCheck" />
 
             <Button
@@ -93,9 +93,9 @@
                 android:text="@string/repository"
                 app:cornerRadius="25dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/textView2"
-                app:layout_constraintStart_toStartOf="@+id/textView2"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                app:layout_constraintEnd_toEndOf="@+id/txt_app_name"
+                app:layout_constraintStart_toStartOf="@+id/txt_app_name"
+                app:layout_constraintTop_toBottomOf="@+id/txt_subtitle" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,27 +7,92 @@
     tools:context=".activity.MainActivity"
     android:background="@color/purple_500">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/myToolbar"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize">
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="45dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:fontFamily="@font/nbold"
-            android:textSize="20sp"
-            android:text="@string/app_name" />
-    </androidx.appcompat.widget.Toolbar>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_movie"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/myToolbar"
-        tools:listitem="@layout/item_movie" />
+            <ImageView
+                android:id="@+id/logo_moca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:contentDescription="@string/author_2997"
+                android:src="@drawable/icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ImageContrastCheck" />
 
-</RelativeLayout>
+            <TextView
+                android:id="@+id/txt_app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nbold"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/logo_moca"
+                app:layout_constraintStart_toStartOf="@+id/logo_moca"
+                app:layout_constraintTop_toBottomOf="@+id/logo_moca"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/txt_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/nregular"
+                android:text="@string/subtitle"
+                android:textColor="@color/light_white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/logo_moca"
+                app:layout_constraintStart_toStartOf="@+id/logo_moca"
+                app:layout_constraintTop_toBottomOf="@+id/txt_app_name"
+                tools:ignore="TextContrastCheck" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/txt_subtitle"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt_subtitle"
+                app:layout_constraintTop_toBottomOf="@+id/txt_subtitle"
+                app:layout_constraintVertical_bias="0.955">
+
+                <Button
+                    android:id="@+id/btn_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/magenta"
+                    android:text="@string/sign_in"
+                    app:cornerRadius="25dp" />
+
+                <Button
+                    android:id="@+id/btn_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="64dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/white"
+                    app:cornerRadius="25dp"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="1dp" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

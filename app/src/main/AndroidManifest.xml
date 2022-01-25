@@ -13,11 +13,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieCatalog">
         <activity
+            android:name=".activity.ProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.CatalogActivity"/>
+        <activity
+            android:name=".activity.CatalogActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.SignInActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
             android:name=".activity.AboutActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".activity.CatalogActivity" />
         <activity
             android:name=".activity.DetailActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".activity.CatalogActivity" />
         <activity
             android:name=".activity.MainActivity"
             android:exported="true">
