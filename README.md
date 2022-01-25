@@ -1,4 +1,4 @@
-# UTS Pemrogaman Aplikasi Mobile
+# UAS Pemrogaman Aplikasi Mobile
 > Aplikasi katalog film populer
 ![Prototype Movie Catalog](https://github.com/zxyvyx/MovieCatalog/blob/master/img/mockup.png)
 
