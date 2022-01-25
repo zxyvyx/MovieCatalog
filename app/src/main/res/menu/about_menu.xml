@@ -2,6 +2,11 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item android:title="@string/menu_profile"
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        app:showAsAction="always"/>
+
     <item android:title="@string/menu_about"
         android:id="@+id/menu_about"
         android:icon="@drawable/ic_baseline_info_24"

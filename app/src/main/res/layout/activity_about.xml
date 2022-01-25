@@ -83,13 +83,12 @@
                 tools:ignore="TextContrastCheck" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_openrepo"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="128dp"
                 android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/magenta"
-                android:onClick="openRepository"
                 android:text="@string/repository"
                 app:cornerRadius="25dp"
                 app:layout_constraintBottom_toBottomOf="parent"

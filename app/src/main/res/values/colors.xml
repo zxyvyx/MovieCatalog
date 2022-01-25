@@ -11,4 +11,5 @@
     <color name="white_transparent_50">#80FFFFFF</color>
     <color name="light_white">#959595</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
 </resources>

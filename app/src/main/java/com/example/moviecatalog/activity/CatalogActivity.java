@@ -57,8 +57,11 @@ public class CatalogActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.menu_about) {
-            Intent intent = new Intent(this, AboutActivity.class);
-            startActivity(intent);
+            Intent intentAbout = new Intent(this, AboutActivity.class);
+            startActivity(intentAbout);
+        } else if (id == R.id.menu_profile) {
+            Intent intentProfile = new Intent(this, ProfileActivity.class);
+            startActivity(intentProfile);
         }
         return true;
     }

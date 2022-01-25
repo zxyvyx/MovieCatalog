@@ -6,6 +6,7 @@ import androidx.core.content.res.ResourcesCompat;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.Rect;
@@ -30,6 +31,7 @@ public class SignInActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_sign_in);
         signin = (Button) findViewById(R.id.btn_signin_account);
         username = (EditText) findViewById(R.id.username1);
@@ -63,6 +65,11 @@ public class SignInActivity extends AppCompatActivity {
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         intent.putExtra("EXIT", true);
+                        SharedPreferences.Editor editor = getSharedPreferences("name", MODE_PRIVATE).edit();
+                        editor.putString("username", user);
+                        editor.putString("password", pass);
+                        editor.putBoolean("isLoggedIn", true);
+                        editor.apply();
                         startActivity(intent);
                         finish();
                     } else {
