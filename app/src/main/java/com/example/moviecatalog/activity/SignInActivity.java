@@ -23,18 +23,18 @@ import com.example.moviecatalog.R;
 import com.example.moviecatalog.helper.DBHelper;
 
 public class SignInActivity extends AppCompatActivity {
-//    EditText username, password;
-//    Button signin;
+    EditText username, password;
+    Button signin;
     DBHelper DB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
-//        signin = (Button) findViewById(R.id.btn_signin_account);
-//        username = (EditText) findViewById(R.id.username1);
-//        password = (EditText) findViewById(R.id.password1);
-//        DB = new DBHelper(this);
+        signin = (Button) findViewById(R.id.btn_signin_account);
+        username = (EditText) findViewById(R.id.username1);
+        password = (EditText) findViewById(R.id.password1);
+        DB = new DBHelper(this);
 
         final Drawable backArrow = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_baseline_arrow_back_24, null);
         backArrow.setColorFilter(Color.parseColor("#FFFFFF"), PorterDuff.Mode.SRC_ATOP);
@@ -46,27 +46,31 @@ public class SignInActivity extends AppCompatActivity {
                 finish();
             }
         });
-//        signin.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                String user = username.getText().toString();
-//                String pass = password.getText().toString();
-//
-//                if (user.equals("")||pass.equals("")) {
-//                    Toast.makeText(SignInActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
-//                } else {
-//                    Boolean checker = DB.checkUsernamePassword(user, pass);
-//                    if (checker == true) {
-//                        Toast.makeText(SignInActivity.this, "Sign In Successfully", Toast.LENGTH_SHORT).show();
-//                        Intent intent = new Intent(getApplicationContext(), CatalogActivity.class);
-//                        startActivity(intent);
-//                        finish();
-//                    } else {
-//                        Toast.makeText(SignInActivity.this, "Invalid credentials", Toast.LENGTH_SHORT).show();
-//                    }
-//                }
-//            }
-//        });
+        signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String user = username.getText().toString();
+                String pass = password.getText().toString();
+
+                if (user.equals("")||pass.equals("")) {
+                    Toast.makeText(SignInActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
+                } else {
+                    Boolean checker = DB.checkUsernamePassword(user, pass);
+                    if (checker == true) {
+                        Toast.makeText(SignInActivity.this, "Sign In Successfully", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getApplicationContext(), CatalogActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.putExtra("EXIT", true);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        Toast.makeText(SignInActivity.this, "Invalid credentials", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+        });
     }
 
     @Override
