@@ -23,4 +23,12 @@
     <string name="password">Kata Sandi</string>
     <string name="re_password">Ulangi Kata Sandi</string>
     <string name="menu_profile">Profile</string>
+    <string name="empty_credentials">Mohon isi semua inputan</string>
+    <string name="sign_in_success">Berhasil masuk</string>
+    <string name="sign_in_invalid">Data inputan salah</string>
+    <string name="sign_up_success">Berhasil mendaftar! Mohon masuk untuk verifikasi!</string>
+    <string name="sign_up_failed">Gagal mendaftar</string>
+    <string name="sign_up_existed">Nama user sudah terdaftar! Mohon masuk!</string>
+    <string name="sign_up_password_not_match">Password tidak sama</string>
+    <string name="sign_out_success">Berhasil keluar</string>
 </resources>

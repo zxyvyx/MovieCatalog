@@ -55,11 +55,11 @@ public class SignInActivity extends AppCompatActivity {
                 String pass = password.getText().toString();
 
                 if (user.equals("")||pass.equals("")) {
-                    Toast.makeText(SignInActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignInActivity.this, R.string.empty_credentials, Toast.LENGTH_SHORT).show();
                 } else {
                     Boolean checker = DB.checkUsernamePassword(user, pass);
                     if (checker == true) {
-                        Toast.makeText(SignInActivity.this, "Sign In Successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SignInActivity.this, R.string.sign_in_success, Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), CatalogActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -73,7 +73,7 @@ public class SignInActivity extends AppCompatActivity {
                         startActivity(intent);
                         finish();
                     } else {
-                        Toast.makeText(SignInActivity.this, "Invalid credentials", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SignInActivity.this, R.string.sign_in_invalid, Toast.LENGTH_SHORT).show();
                     }
                 }
             }

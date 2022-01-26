@@ -25,4 +25,12 @@
     <string name="username">Username</string>
     <string name="re_password">Re-Password</string>
     <string name="menu_profile">Profile</string>
+    <string name="empty_credentials">Please enter all the fields</string>
+    <string name="sign_in_success">Sign In Successfully</string>
+    <string name="sign_in_invalid">Invalid credentials</string>
+    <string name="sign_up_success">Registered successfully! Please sign in to verify!</string>
+    <string name="sign_up_failed">Registration failed</string>
+    <string name="sign_up_existed">User already exist! Please sign in</string>
+    <string name="sign_up_password_not_match">Password not matched</string>
+    <string name="sign_out_success">Sign Out Successfully</string>
 </resources>

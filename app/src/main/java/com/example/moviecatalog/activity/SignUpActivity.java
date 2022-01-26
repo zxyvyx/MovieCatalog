@@ -54,22 +54,22 @@ public class SignUpActivity extends AppCompatActivity {
                 String repass = repassword.getText().toString();
 
                 if (user.equals("")||pass.equals("")||repass.equals("")) {
-                    Toast.makeText(SignUpActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignUpActivity.this, R.string.empty_credentials, Toast.LENGTH_SHORT).show();
                 } else {
                     if (pass.equals(repass)) {
                         Boolean checker = DB.checkUsername(user);
                         if (checker == false) {
                             Boolean insert = DB.insertData(user, pass);
                             if (insert == true) {
-                                Toast.makeText(SignUpActivity.this, "Registered successfully! Please sign in to verify!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SignUpActivity.this, R.string.sign_up_success, Toast.LENGTH_SHORT).show();
                             } else {
-                                Toast.makeText(SignUpActivity.this, "Registration failed", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SignUpActivity.this, R.string.sign_up_failed, Toast.LENGTH_SHORT).show();
                             }
                         } else {
-                            Toast.makeText(SignUpActivity.this, "User already exist! Please sign in!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignUpActivity.this, R.string.sign_up_existed, Toast.LENGTH_SHORT).show();
                         }
                     } else {
-                        Toast.makeText(SignUpActivity.this, "Password not matched", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SignUpActivity.this, R.string.sign_up_password_not_match, Toast.LENGTH_SHORT).show();
                     }
                 }
             }
